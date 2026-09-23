@@ -1,0 +1,11 @@
+services:
+  hola-mundo:
+    build: 
+      context: .
+      dockerfile: dockerfile
+    container_name: hola_mundo_node
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: 3000
+    restart: always
